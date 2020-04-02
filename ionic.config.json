@@ -1,7 +1,5 @@
 {
-  "name": "Photo Gallery NG Capacitor",
-  "integrations": {
-    "capacitor": {}
-  },
+  "name": "isspol-log-app",
+  "integrations": {},
   "type": "angular"
 }
