@@ -20,8 +20,8 @@ export class SigninPage implements OnInit {
     }
 
     verifyUser(parametro) {
-        const data = '{"idUsuarioApp":"5","correo":null,"clave":"seya1922"}';
-        const test = JSON.parse(data);
+        /*const data = '{"idUsuarioApp":"5","correo":null,"clave":"seya1922"}';
+        const test = JSON.parse(data);*/
         this.usuarioService.verificarUsuario(parametro).then(respuesta => {
             if (respuesta) {
                 this.router.navigate(['/password', respuesta.idUsuarioApp]);

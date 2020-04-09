@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-
+import {Builder} from 'xml2js';
 
 @Injectable({
     providedIn: 'root'
@@ -50,7 +50,8 @@ export class IsspolUtilService {
 
 
     toXML(json: any) {
-        return null;
+        const builder = new Builder();
+        return builder.buildObject(json);
     }
 
 
