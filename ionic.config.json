@@ -1,5 +1,7 @@
 {
   "name": "isspol-log-app",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
