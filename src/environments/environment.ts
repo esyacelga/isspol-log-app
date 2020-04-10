@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  url: 'http://localhost:8080/siisspol-web'
+  url: 'http://192.168.2.232:8080//siisspol-web'
 };
 
 /*

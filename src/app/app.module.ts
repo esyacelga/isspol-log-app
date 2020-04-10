@@ -10,6 +10,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 
 import {CommonModuleModule} from './modules/common-module/common.module';
+import {OneSignal} from '@ionic-native/onesignal/ngx';
 
 @NgModule({
     declarations: [AppComponent],
@@ -17,6 +18,7 @@ import {CommonModuleModule} from './modules/common-module/common.module';
     imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, CommonModuleModule],
     providers: [
         StatusBar,
+        OneSignal,
         SplashScreen,
         {provide: RouteReuseStrategy, useClass: IonicRouteStrategy}
     ],
