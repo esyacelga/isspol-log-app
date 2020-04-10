@@ -3,5 +3,5 @@ export const ERROR_MESSAGE = 'Hubo un problema en la aplicación, por favor espe
 export const LOAD_MESSAGE = 'Procesando...';
 export const DURATION_TOAST = 3000;
 
-export const APP_ID = 'e48a33c1-ca2e-48f9-88e5-3948eda929d1';
-export const GOOGGLE_PROJECT_NUMBER = '816831801588';
+export const APP_ID = 'f6e34ad8-3537-4448-9c6f-fe9053b9aa41';
+export const GOOGGLE_PROJECT_NUMBER = '567780242988';

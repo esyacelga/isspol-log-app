@@ -103,5 +103,5 @@
     <plugin name="cordova-plugin-file-transfer" spec="^1.7.1" />
     <plugin name="cordova-plugin-file" spec="^6.0.2" />
     <engine name="android" spec="7.1.4" />
-    <allow-navigation href="http://localhost:8100" sessionid="7b4a3e9a" />
+    <allow-navigation href="http://localhost:8100" sessionid="269ff99d" />
 </widget>
