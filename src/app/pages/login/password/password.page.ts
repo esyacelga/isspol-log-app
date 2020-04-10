@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {UsuarioApp} from '../../../modules/security-module/classes/UsuarioApp';
 import {ActivatedRoute, Router} from '@angular/router';
 import {UsuarioService} from '../../../modules/security-module/usuario/usuario.service';
-import {Platform, ToastController} from '@ionic/angular';
+import {NavController, Platform} from '@ionic/angular';
 import {StorageAppService} from '../../../modules/ionic-module/generic/system/storage-app.service';
 import {ToastAppService} from '../../../modules/ionic-module/generic/system/toast-app.service';
 
@@ -22,7 +22,7 @@ export class PasswordPage implements OnInit {
                 private svToast: ToastAppService,
                 private platform: Platform,
                 private svStorage: StorageAppService,
-                private notify: ToastController) {
+                private navCtrl: NavController,) {
 
     }
 
