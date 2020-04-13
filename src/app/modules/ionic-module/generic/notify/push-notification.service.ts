@@ -15,16 +15,29 @@ export class PushNotificationService {
 
     );
 
+    constructor(private genericService: ExecuteCallProcedureService,
+                private nav: NavController,
+                private svtStorage: StorageAppService,
+                private oneSignal: OneSignal, private svrSorage: StorageAppService) {
+        this.cargarMensajes();
+    }
+
+
+    async borrarMensajes(key: string) {
+        await this.svtStorage.remove(key);
+        this.mensajes = [];
+        this.guardarMensajes(this.mensajes);
+    }
+
+    eliminarVariables() {
+        this.svtStorage.clear();
+    }
+
     async getMensajes() {
         await this.cargarMensajes();
         return [...this.mensajes];
     }
 
-    constructor(private genericService: ExecuteCallProcedureService,
-                private nav: NavController,
-                private oneSignal: OneSignal, private svrSorage: StorageAppService) {
-        this.cargarMensajes();
-    }
 
     /*async enviarNotificacion(mensaje: MensajeOneSignal, mensajeExito) {
         const options = new RequestOptions();

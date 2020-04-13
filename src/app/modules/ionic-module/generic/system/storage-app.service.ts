@@ -12,6 +12,15 @@ export class StorageAppService {
 
     }
 
+
+    remove(key) {
+        this.storage.remove(key);
+    }
+
+    clear() {
+        this.storage.clear();
+    }
+
     eliminarTodo() {
         if (this.platform.is('cordova')) {
             this.storage.clear();
